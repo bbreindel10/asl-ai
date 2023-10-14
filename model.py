@@ -1,6 +1,23 @@
 from roboflow import Roboflow
 import streamlit as st
 
+custom_css = """
+<style>
+    .my-custom-class {
+        color: red;
+        background-color: lightgrey;
+        padding: 10px;
+    }
+
+    #my-custom-id {
+        font-size: 20px;
+    }
+</style>
+"""
+st.write(custom_css, unsafe_allow_html=True)
+
+st.write('<div class="my-custom-class">This is styled with custom CSS</div>', unsafe_allow_html=True)
+
 st.title('ASL detection')
 
 rf = Roboflow(api_key="07xd4Fb9Jmy0RHi57x5x")
