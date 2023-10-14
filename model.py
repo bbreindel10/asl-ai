@@ -7,7 +7,7 @@ rf = Roboflow(api_key="07xd4Fb9Jmy0RHi57x5x")
 project = rf.workspace().project("american-sign-language-letters")
 model = project.version(6).model
 
-user_input = st.text_input("Enter your input", "Type here...")
+user_input = st.text_input("Enter your input")
 
 # infer on a local image
 def predict(image_path):
