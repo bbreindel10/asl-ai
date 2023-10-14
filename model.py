@@ -8,8 +8,8 @@ project = rf.workspace().project("american-sign-language-letters")
 model = project.version(6).model
 
 # infer on a local image
-def predict():
-    print(model.predict("k1.jpg", confidence=40, overlap=30).json())
+def predict(processed_image):
+    print(model.predict(processed_image, confidence=40, overlap=30).json())
 
 # visualize your prediction
 # model.predict("your_image.jpg", confidence=40, overlap=30).save("prediction.jpg")
@@ -20,6 +20,6 @@ def predict():
 picture = st.camera_input("Take a picture")
 
 if picture:
-    st.image(picture)
+    picture.save("processed_image.jpg")
 
-st.button("evaluate image", type="primary", on_click=predict())
+st.button("evaluate image", type="primary", on_click=predict("processed_image.jpg"))
