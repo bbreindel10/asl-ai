@@ -2,7 +2,15 @@ from roboflow import Roboflow
 import streamlit as st
 
 def model():
-    st.title('ASL detection')
+    st.title('ASL Practice')
+
+    # Include custom CSS from the HTML file
+    custom_css = """
+    <style>
+        @import url("index.html");
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
     # Roboflow integration and ASL detection code
     rf = Roboflow(api_key="07xd4Fb9Jmy0RHi57x5x")
