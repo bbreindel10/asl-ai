@@ -1,7 +1,7 @@
 import streamlit as st
 
 def about():
-    st.title('About Us')
+    st.title('Our Mission :rocket:')
 
     # Add a brief introduction about the ASL practice website and its purpose
     st.write(

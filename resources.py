@@ -1,7 +1,7 @@
 import streamlit as st 
 
 def resources():
-    st.title('Resources')
+    st.title('Resources :old_key:')
     st.write(
         "Looking to learn more? Check out our resources down below!"
     )

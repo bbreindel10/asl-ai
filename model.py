@@ -2,7 +2,7 @@ from roboflow import Roboflow
 import streamlit as st
 
 def model():
-    st.title('ASL Practice')
+    st.title('ASL Detection :mag:')
 
     # Roboflow integration and ASL detection code
     rf = Roboflow(api_key="07xd4Fb9Jmy0RHi57x5x")
@@ -22,7 +22,7 @@ def model():
 
         return None
     
-    user_input = st.text_input("Enter your input")
+    user_input = st.text_input("Enter your input").upper()
     picture = st.camera_input("Take a picture")
 
     if picture:

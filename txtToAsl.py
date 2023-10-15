@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def txtToAsl():
-    st.title("ASL Practice")
+    st.title("ASL Practice :pencil:")
     st.subheader("Practice your ASL skills with us!")
     user_input = st.text_input("Enter your input").upper()
     if user_input == 'A':
