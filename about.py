@@ -23,8 +23,9 @@ def about():
         "Our ASL practice website offers a range of features to help you learn and practice American Sign Language effectively. These features include:"
     )
     st.markdown("- Real-time ASL detection and feedback.")
+    st.markdown("- Text to ASL alphabet learning")
     st.markdown("- A supportive and encouraging community of learners.")
-    st.markdown("- Accessibility options for users with different needs.")
+    st.markdown("- Resources for future ASL education.")
 
     # Add a closing statement
     st.write(

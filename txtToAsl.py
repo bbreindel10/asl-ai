@@ -83,5 +83,7 @@ def txtToAsl():
     elif user_input == 'Z':
         image = Image.open('images/letter_Z.jpeg')
         st.image(image, caption = 'Z')
+    elif user_input == '':
+        st.write("")
     else: 
         st.write("invalid input")
