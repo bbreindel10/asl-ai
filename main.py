@@ -12,8 +12,8 @@ def main():
     # Create custom navigation buttons for both "About" and "Model"
     selected_page = st.sidebar.radio(" ", ["About", "Model", "Resources", "Text to ASL"])
 
-  if selected_page == "About":
-        about()
+    if selected_page == "About":
+            about()
     elif selected_page == "Text to ASL":
         txtToAsl()
     elif selected_page == "Model":
