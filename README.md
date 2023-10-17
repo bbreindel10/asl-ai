@@ -16,7 +16,7 @@ Celina Anwar, Madhumita Narayan, Nicole Hu, Shreya Perumalla
 
 UIUC Computer Science
 
-Built for Code Ada 2023, Innovating Inclusion
+Winning AI project for Code Ada 2023, Innovating Inclusion
 
 ## Development
 Built with Python, deployed on Streamlit
